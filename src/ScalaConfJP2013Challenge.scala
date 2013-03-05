@@ -1,8 +1,6 @@
 import annotation.tailrec
 
 object ScalaConfJP2013Challenge {
-  def stringToIntArray(str: String): Array[Int] = str.toArray.map(_.toString.toInt)
-
   def quiz1(intersections: Array[String]): Int = {
     val initUsed =intersections.map(_.toArray.map(_.toString == "1"))
     val n = initUsed.size
